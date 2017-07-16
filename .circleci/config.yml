@@ -23,6 +23,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Permissions
+          command: chmod +x ./src/PinHolder/gradlew
+      - run:
           name: Build
           command: ./src/PinHolder/gradlew
 
