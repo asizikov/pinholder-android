@@ -1,5 +1,6 @@
 package com.pinholder.android;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,5 +18,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickNew(View view) {
+        Intent intent = new Intent(MainActivity.this, NewFormActivity.class);
+        startActivity(intent);
     }
 }
