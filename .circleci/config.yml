@@ -23,6 +23,6 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Build
-        command: ./src/PinHolder/gradlew
+          name: Build
+          command: ./src/PinHolder/gradlew
 
